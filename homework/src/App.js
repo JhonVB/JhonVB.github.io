@@ -13,7 +13,7 @@ function App() {
     //Acá habría que hacer el llamado a la API para obtener los datos de la ciudad
     //pero de momento agregaremos una ciudad por default para ver que funcione
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=f9dbb859e7ab2e12c2fdaf73f77c88ef&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=f9dbb859e7ab2e12c2fdaf73f77c88ef&units=metric`
     )
       .then((r) => r.json())
       .then((recurso) => {
