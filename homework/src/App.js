@@ -32,7 +32,7 @@ function App() {
             longitud: recurso.coord.lon,
           };
           //  setCities((oldCities) => [...oldCities, ciudad]);
-          cities.length <= 5
+          cities.length <= 4
             ? !cities.find((e) => e.id === ciudad.id)
               ? setCities([...cities, ciudad])
               : alert("Ciudad ya agregada")
